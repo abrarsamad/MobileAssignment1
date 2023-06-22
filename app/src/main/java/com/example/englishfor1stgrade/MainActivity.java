@@ -1,7 +1,12 @@
 package com.example.englishfor1stgrade;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -9,10 +14,30 @@ import android.widget.CompoundButton;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splash);
         setContentView(R.layout.activity_main);
+
+        Button saveButton = findViewById(R.id.save);
+
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //String answer1 = answerTextView1.getText().toString(); this should be the answers corrected
+               // String answer2 = answerTextView2.getText().toString();
+                // Add more answer variables if needed
+
+              //  Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+               // intent.putExtra("answer1", answer1);
+                //intent.putExtra("answer2", answer2);
+                // Add more answers to the intent if needed
+
+             //   startActivity(intent);
+            }
+        });
 
         RadioButton radioButton1 = findViewById(R.id.radio_button_1);
         RadioButton radioButton2 = findViewById(R.id.radio_button_2);

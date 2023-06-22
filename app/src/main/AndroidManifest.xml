@@ -12,6 +12,7 @@
         android:theme="@style/Theme.EnglishFor1stGrade"
         tools:targetApi="31" >
         <activity
+            android:theme="@style/SplashTheme"
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
